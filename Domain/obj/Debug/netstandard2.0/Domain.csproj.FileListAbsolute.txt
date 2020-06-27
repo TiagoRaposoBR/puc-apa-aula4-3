@@ -1,0 +1,9 @@
+D:\Documentos\_Pos Graduacao - ASD\Análise, projeto e avaliação de arquitetura de software\Projetos\puc-apa-aula4-3\Domain\bin\Debug\netstandard2.0\Domain.deps.json
+D:\Documentos\_Pos Graduacao - ASD\Análise, projeto e avaliação de arquitetura de software\Projetos\puc-apa-aula4-3\Domain\bin\Debug\netstandard2.0\Domain.dll
+D:\Documentos\_Pos Graduacao - ASD\Análise, projeto e avaliação de arquitetura de software\Projetos\puc-apa-aula4-3\Domain\bin\Debug\netstandard2.0\Domain.pdb
+D:\Documentos\_Pos Graduacao - ASD\Análise, projeto e avaliação de arquitetura de software\Projetos\puc-apa-aula4-3\Domain\obj\Debug\netstandard2.0\Domain.csprojAssemblyReference.cache
+D:\Documentos\_Pos Graduacao - ASD\Análise, projeto e avaliação de arquitetura de software\Projetos\puc-apa-aula4-3\Domain\obj\Debug\netstandard2.0\Domain.csproj.CoreCompileInputs.cache
+D:\Documentos\_Pos Graduacao - ASD\Análise, projeto e avaliação de arquitetura de software\Projetos\puc-apa-aula4-3\Domain\obj\Debug\netstandard2.0\Domain.AssemblyInfoInputs.cache
+D:\Documentos\_Pos Graduacao - ASD\Análise, projeto e avaliação de arquitetura de software\Projetos\puc-apa-aula4-3\Domain\obj\Debug\netstandard2.0\Domain.AssemblyInfo.cs
+D:\Documentos\_Pos Graduacao - ASD\Análise, projeto e avaliação de arquitetura de software\Projetos\puc-apa-aula4-3\Domain\obj\Debug\netstandard2.0\Domain.dll
+D:\Documentos\_Pos Graduacao - ASD\Análise, projeto e avaliação de arquitetura de software\Projetos\puc-apa-aula4-3\Domain\obj\Debug\netstandard2.0\Domain.pdb

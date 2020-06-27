@@ -1,0 +1,4 @@
+D:\Documentos\_Pos Graduacao - ASD\Análise, projeto e avaliação de arquitetura de software\Projetos\puc-apa-aula4-3\Infrastructure\obj\Debug\netstandard2.0\Infrastructure.csprojAssemblyReference.cache
+D:\Documentos\_Pos Graduacao - ASD\Análise, projeto e avaliação de arquitetura de software\Projetos\puc-apa-aula4-3\Infrastructure\obj\Debug\netstandard2.0\Infrastructure.csproj.CoreCompileInputs.cache
+D:\Documentos\_Pos Graduacao - ASD\Análise, projeto e avaliação de arquitetura de software\Projetos\puc-apa-aula4-3\Infrastructure\obj\Debug\netstandard2.0\Infrastructure.AssemblyInfoInputs.cache
+D:\Documentos\_Pos Graduacao - ASD\Análise, projeto e avaliação de arquitetura de software\Projetos\puc-apa-aula4-3\Infrastructure\obj\Debug\netstandard2.0\Infrastructure.AssemblyInfo.cs
