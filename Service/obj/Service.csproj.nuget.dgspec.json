@@ -1,77 +1,9 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documentos\\_Pos Graduacao - ASD\\Análise, projeto e avaliação de arquitetura de software\\Projetos\\puc-apa-aula4-3\\Application\\Application.csproj": {}
+    "D:\\Documentos\\_Pos Graduacao - ASD\\Análise, projeto e avaliação de arquitetura de software\\Projetos\\puc-apa-aula4-3\\Service\\Service.csproj": {}
   },
   "projects": {
-    "D:\\Documentos\\_Pos Graduacao - ASD\\Análise, projeto e avaliação de arquitetura de software\\Projetos\\puc-apa-aula4-3\\Application\\Application.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\Documentos\\_Pos Graduacao - ASD\\Análise, projeto e avaliação de arquitetura de software\\Projetos\\puc-apa-aula4-3\\Application\\Application.csproj",
-        "projectName": "Application",
-        "projectPath": "D:\\Documentos\\_Pos Graduacao - ASD\\Análise, projeto e avaliação de arquitetura de software\\Projetos\\puc-apa-aula4-3\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\Tiago\\.nuget\\packages\\",
-        "outputPath": "D:\\Documentos\\_Pos Graduacao - ASD\\Análise, projeto e avaliação de arquitetura de software\\Projetos\\puc-apa-aula4-3\\Application\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\Tiago\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp3.1"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netcoreapp3.1": {
-            "projectReferences": {
-              "D:\\Documentos\\_Pos Graduacao - ASD\\Análise, projeto e avaliação de arquitetura de software\\Projetos\\puc-apa-aula4-3\\Domain\\Domain.csproj": {
-                "projectPath": "D:\\Documentos\\_Pos Graduacao - ASD\\Análise, projeto e avaliação de arquitetura de software\\Projetos\\puc-apa-aula4-3\\Domain\\Domain.csproj"
-              },
-              "D:\\Documentos\\_Pos Graduacao - ASD\\Análise, projeto e avaliação de arquitetura de software\\Projetos\\puc-apa-aula4-3\\Service\\Service.csproj": {
-                "projectPath": "D:\\Documentos\\_Pos Graduacao - ASD\\Análise, projeto e avaliação de arquitetura de software\\Projetos\\puc-apa-aula4-3\\Service\\Service.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp3.1": {
-          "dependencies": {
-            "FluentValidation.AspNetCore": {
-              "target": "Package",
-              "version": "[*, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
     "D:\\Documentos\\_Pos Graduacao - ASD\\Análise, projeto e avaliação de arquitetura de software\\Projetos\\puc-apa-aula4-3\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -253,7 +185,7 @@
           "dependencies": {
             "FluentValidation.AspNetCore": {
               "target": "Package",
-              "version": "[8.6.2, )"
+              "version": "[*, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
