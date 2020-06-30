@@ -19,7 +19,7 @@ namespace Infrastructure.Context
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-
+            
             modelBuilder.Entity<ContaCorrente>(new ContaCorrenteMap().Configure);
             modelBuilder.Entity<Correntista>(new CorrentistaMap().Configure);
         }

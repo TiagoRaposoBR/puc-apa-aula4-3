@@ -12,6 +12,10 @@ namespace Infrastructure.Mapping
 
             builder.HasKey(c => c.Id);
 
+            builder.Property(c => c.correntistaId)
+                .IsRequired()
+                .HasColumnName("CorrentistaId");
+
             builder.Property(c => c.Saldo)
                 .IsRequired()
                 .HasColumnName("Saldo");

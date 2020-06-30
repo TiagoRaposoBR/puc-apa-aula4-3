@@ -11,18 +11,16 @@ namespace Application.Controllers
 {
     [Produces("application/json")]
     [Route("api/[controller]")]
-    public class ContaCorrenteController : ControllerBase
+    public class CorrentistaController : ControllerBase
     {
-        private BaseService<ContaCorrente> contaService = new BaseService<ContaCorrente>();
-        private BaseService<Correntista> correntistaService = new BaseService<Correntista>();
-        private CoafService coafService = new CoafService();
+        private BaseService<Correntista> service = new BaseService<Correntista>();
 
-        [HttpPost("NovaConta")]
-        public IActionResult NovaConta([FromBody] ContaCorrente item)
+        [HttpPost("NovoCorrentista")]
+        public IActionResult NovoCorrentista([FromBody] Correntista item)
         {
             try
             {
-                contaService.Post<ContaCorrenteValidator>(item);
+                service.Post<CorrentistaValidator>(item);
 
                 return new ObjectResult(item.Id);
             }
@@ -36,12 +34,12 @@ namespace Application.Controllers
             }
         }
 
-        [HttpGet("GetConta/{id}")]
-        public IActionResult Get(int id)
+        [HttpGet("GetCorrentista/{id}")]
+        public IActionResult GetCorrentista(int id)
         {
             try
             {
-                return new ObjectResult(contaService.Get(id));
+                return new ObjectResult(service.Get(id));
             }
             catch (ArgumentException ex)
             {
@@ -53,43 +51,29 @@ namespace Application.Controllers
             }
         }
 
-        [HttpPut("FazerTransacao")]
-        public IActionResult FazerTransacao([FromBody] Transacao transacao)
+        [HttpGet("ListarCorrentistas")]
+        public IActionResult ListarCorrentistas()
         {
             try
             {
-                ContaCorrente conta = contaService.Get(transacao.Id);
-                conta.Saldo += transacao.Valor;
-                contaService.Put<ContaCorrenteValidator>(conta);
-
-                if (transacao.PrecisaNotificarCoaf())
-                {
-                    Correntista correntista = correntistaService.Get(conta.correntistaId);
-                    coafService.NotificarCoafApi(correntista, transacao);
-                }
-
-                return new ObjectResult(conta);
+                return new ObjectResult(service.Get());
             }
-            catch (ArgumentNullException ex)
+            catch (ArgumentException ex)
             {
                 return NotFound(ex);
-            }
-            catch (InvalidOperationException ex)
-            {
-                return Problem(ex.Message);
             }
             catch (Exception ex)
             {
                 return BadRequest(ex);
             }
         }
-        
-        [HttpDelete("Delete/{id}")]
+
+        [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
             try
             {
-                contaService.Delete(id);
+                service.Delete(id);
 
                 return new NoContentResult();
             }

@@ -8,6 +8,5 @@ namespace Domain.Entities
 		public string Cpf { get; set; }
 		public string Telefone { get; set; }
 		public string Endereco { get; set; }
-		public ContaCorrente Conta { get; set; }
 	}
 }

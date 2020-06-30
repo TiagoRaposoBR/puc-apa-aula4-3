@@ -185,7 +185,7 @@
           "dependencies": {
             "FluentValidation.AspNetCore": {
               "target": "Package",
-              "version": "[*, )"
+              "version": "[8.6.2, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",

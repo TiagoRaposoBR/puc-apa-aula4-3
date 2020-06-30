@@ -4,6 +4,8 @@ namespace Domain.Entities
 {
 	public class ContaCorrente : BaseEntity
 	{
+		public int correntistaId { get; set; }
+		
 		private decimal _Saldo;
 		public decimal Saldo
 		{

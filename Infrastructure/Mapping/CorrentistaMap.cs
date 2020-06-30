@@ -27,9 +27,6 @@ namespace Infrastructure.Mapping
             builder.Property(c => c.Endereco)
                 .IsRequired()
                 .HasColumnName("Endereco");
-
-            builder.Property(c => c.Conta)
-                .HasColumnName("Conta");
         }
     }
 }

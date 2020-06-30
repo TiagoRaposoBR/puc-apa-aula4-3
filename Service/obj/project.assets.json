@@ -7930,7 +7930,7 @@
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "Domain >= 1.0.0",
-      "FluentValidation.AspNetCore >= *",
+      "FluentValidation.AspNetCore >= 8.6.2",
       "Infrastructure >= 1.0.0",
       "NETStandard.Library >= 2.0.3"
     ]
@@ -7981,7 +7981,7 @@
         "dependencies": {
           "FluentValidation.AspNetCore": {
             "target": "Package",
-            "version": "[*, )"
+            "version": "[8.6.2, )"
           },
           "NETStandard.Library": {
             "suppressParent": "All",
