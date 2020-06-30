@@ -13,14 +13,15 @@ namespace Application.Controllers
     [Route("api/[controller]")]
     public class CorrentistaController : ControllerBase
     {
-        private BaseService<Correntista> service = new BaseService<Correntista>();
+        private BaseService<Correntista> correntistaService = new BaseService<Correntista>();
+        private BaseService<ContaCorrente> contaService = new BaseService<ContaCorrente>();
 
         [HttpPost("NovoCorrentista")]
         public IActionResult NovoCorrentista([FromBody] Correntista item)
         {
             try
             {
-                service.Post<CorrentistaValidator>(item);
+                correntistaService.Post<CorrentistaValidator>(item);
 
                 return new ObjectResult(item.Id);
             }
@@ -39,7 +40,24 @@ namespace Application.Controllers
         {
             try
             {
-                return new ObjectResult(service.Get(id));
+                return new ObjectResult(correntistaService.Get(id));
+            }
+            catch (ArgumentException ex)
+            {
+                return NotFound(ex);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex);
+            }
+        }
+
+        [HttpGet("GetContasDoCorrentista/{id}")]
+        public IActionResult GetContasDoCorrentista(int id)
+        {
+            try
+            {
+                return new ObjectResult(contaService.Get().Where(c => c.correntistaId == id).ToList());
             }
             catch (ArgumentException ex)
             {
@@ -56,7 +74,7 @@ namespace Application.Controllers
         {
             try
             {
-                return new ObjectResult(service.Get());
+                return new ObjectResult(correntistaService.Get());
             }
             catch (ArgumentException ex)
             {
@@ -73,7 +91,7 @@ namespace Application.Controllers
         {
             try
             {
-                service.Delete(id);
+                correntistaService.Delete(id);
 
                 return new NoContentResult();
             }
